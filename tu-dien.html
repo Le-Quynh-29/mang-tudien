@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tu dien</title>
+</head>
+<body>
+<h1>Search English-Vietnmaese</h1>
+<form>
+<!--    <input type="text" id="1" name="English" placeholder="English" />-->
+<!--    <input type="button" onclick="anvaoday()" value="tim"/>-->
+
+        <input type="text" id ="result">
+        <input type="button" id ="search" value="search" onclick="check()">
+    <p id = "end"></p>
+</form>
+<script>
+        function check(){
+            let english = ["hello","one","two","goodbye"];
+            let vietnamese = ["xin chao","1","2","tam biet"];
+            let x = document.getElementById("result").value;
+            let y = null;
+            for(let i =0;i< vietnamese.length;i++){
+                if ( x=== english[i]){
+                    y = vietnamese[i];
+                }
+                document.getElementById("end").innerHTML = y ;
+            }
+        }
+// <!--    let English = ["dog","cat","mom","dad","banana","apple","tea","rice"];-->
+// <!--    let Vietnamese = ["chó","mèo","mẹ","cha","chuối","táo","trà","cơm"];-->
+// <!--    function anvaoday(){-->
+// <!--        for (let i = 0; i < English.length; i++) {-->
+// <!--            for (let j = 0; j < Vietnamese.length; j++) {-->
+// <!--                if (English.length[i] == Vietnamese.length[j])-->
+// <!--                    -->
+// <!--            }-->
+// <!--        }-->
+// <!--    }-->
+</script>
+</body>
+</html>
